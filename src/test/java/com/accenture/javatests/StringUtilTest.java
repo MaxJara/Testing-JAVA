@@ -1,18 +1,15 @@
 package com.accenture.javatests;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 
 public class StringUtilTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void testRepeat() {
 
-        assertEquals(StringUtil.repeat("hola", 3), "holaholahola");
-        assertEquals(StringUtil.repeat("hola", 1), "hola");
-    }
-
-    private static void assertEquals(String actual, String expected) {
-
-        if (!actual.equals(expected)) {
-            throw new RuntimeException(actual + " is not equal to expected " + expected);
-        }
+        Assert.assertEquals("holaholahola", StringUtil.repeat("hola", 3));
+        Assert.assertEquals("hola", StringUtil.repeat("hola", 1));
     }
 }
