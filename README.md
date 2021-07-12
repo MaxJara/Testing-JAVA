@@ -25,6 +25,7 @@ We learned how to write tests to test the functionalities of a movie system. By 
                 
 ----
 #### EXAMPLES 🏃
+
 I implemented a function that given a number: 
 - If the number is divisible by 3, return "Fizz" 
 - If the number is divisible by 5, "Buzz" returns 
